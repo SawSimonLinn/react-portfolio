@@ -36,7 +36,7 @@
 .work-title {
   position: absolute;
   width: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   bottom: 3px;
   padding: 7px 10px 7px 40px;
@@ -96,6 +96,34 @@
   background: #7a4fd0;
 }
 
+@media screen and (max-width: 1200px) and (min-width: 769px) {
+  .mywork-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .work-title h2 {
+    font-size: 20px;
+    padding: 7px 10px 7px 20px;
+  }
+  .work-info {
+    padding: 10px 20px;
+  }
+  .work-info h2 {
+    font-size: 22px;
+  }
+  .work-info p {
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 100px;
+    padding: 0;
+    margin: 10px 0;
+  }
+  .work-info .work-btn a button {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 768px) {
   .mywork {
     gap: 50px;
@@ -104,7 +132,7 @@
   }
 
   .mywork-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
   }
 }
