@@ -28,9 +28,15 @@ const Footer = () => {
           © 2025 Saw Simon Linn. All rights reserved.
         </p>
         <div className='footer-bottom-right'>
-          <p>Term of Services</p>
-          <p>Privacy Policy</p>
-          <p>Connect with me</p>
+          <a href='https://www.linkedin.com/in/sawsimonlinn/' target='_blank'>
+            <p>Instagram</p>
+          </a>
+          <a href='https://www.linkedin.com/in/sawsimonlinn/' target='_blank'>
+            <p>GitHub</p>
+          </a>
+          <a href='https://www.linkedin.com/in/sawsimonlinn/' target='_blank'>
+            <p>LinkedIn</p>
+          </a>
         </div>
       </div>
     </div>

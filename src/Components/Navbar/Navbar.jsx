@@ -67,9 +67,14 @@ const Navbar = () => {
         </li>
       </ul>
       <div className='nav-connect'>
-        <AnchorLink className='anchor-link' offset={50} href='#contact'>
-          Connect With Me
-        </AnchorLink>
+        <a
+          className='anchor-link'
+          offset={50}
+          href='https://www.linkedin.com/in/sawsimonlinn/'
+          target='_blank'
+        >
+          <button>Connect With Me</button>
+        </a>
       </div>
     </div>
   );

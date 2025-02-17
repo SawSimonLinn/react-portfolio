@@ -70,6 +70,15 @@
 .footer-email-input:hover {
   border: 2px solid #8e54e9;
 }
+.footer-bottom-right a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-bottom-right a:hover {
+  color: #a0a0a0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
 .footer-subscribe:hover {
   background-position: right center;
 }

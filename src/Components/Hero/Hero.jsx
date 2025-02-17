@@ -11,7 +11,7 @@ const Hero = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
-  const toRotate = ['Web Developer', 'React Developer', 'Full-Stack Developer'];
+  const toRotate = ['Web Developer', 'React Developer', 'Frontend Developer'];
 
   useEffect(() => {
     let ticker = setInterval(() => {
