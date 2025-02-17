@@ -10,7 +10,7 @@ const mywork_data = [
     w_no: 1,
     w_name: 'News Explorer',
     w_description:
-      'A React-based web app that lets users search for the latest news on any topic and save articles in their personal account. Powered by APIs for real-time updates. 🚀',
+      'A React web app for searching the latest news and saving articles, featuring real-time updates via API integration.',
     w_img: project1_img,
     w_url: 'https://sawsimonlinn.github.io/se_project_newsexplorer/',
     w_github: 'https://github.com/SawSimonLinn/se_project_newsexplorer',
@@ -19,7 +19,7 @@ const mywork_data = [
     w_no: 2,
     w_name: 'What to Wear (WTWR)',
     w_description:
-      'This is a frontend project built with React.js, designed for a dynamic and responsive user interface. It follows best practices for component-based architecture, state management, and API integration.',
+      'A React.js frontend project with a dynamic UI, component-based architecture, state management, and API integration.',
     w_img: project2_img,
     w_url: 'https://wtwrapp.jumpingcrab.com/',
     w_github: 'https://github.com/SawSimonLinn/se_project_react',
@@ -29,7 +29,7 @@ const mywork_data = [
     w_name: 'WTWR Backend',
     w_img: project3_img,
     w_description:
-      'This is a backend project built with Express.js, providing RESTful API endpoints and server-side functionality. It follows best practices for scalability, authentication, and modular routing.',
+      'An Express.js backend project with RESTful APIs, server-side functionality, authentication, modular routing, and scalability.',
     w_url: 'https://www.wtwrapp.jumpingcrab.com/',
     w_github: 'https://github.com/SawSimonLinn/se_project_express',
   },
@@ -38,7 +38,7 @@ const mywork_data = [
     w_no: 4,
     w_name: 'Around the US',
     w_description:
-      'This project, Around The U.S., is a web application built with JavaScript (OOP), featuring interactive user functionality, dynamic content updates, and modular, object-oriented code structure for better maintainability.',
+      'Around The U.S. is a JavaScript (OOP) web app with interactive features, dynamic content updates, and a modular, maintainable code structure.',
     w_img: project4_img,
     w_url: 'https://sawsimonlinn.github.io/se_project_aroundtheus/',
     w_github: 'https://github.com/SawSimonLinn/se_project_aroundtheus',
@@ -47,7 +47,7 @@ const mywork_data = [
     w_no: 5,
     w_name: 'Triple Peaks Library',
     w_description:
-      'This project, Library Project, is a static website built with Semantic HTML5, utilizing Flexbox and Positioning for layout structure. It features vertical stacking with z-index to manage element layering effectively.',
+      '    Library Project is a static website using Semantic HTML5, Flexbox, and Positioning, with z-index for effective element layering.',
     w_img: project5_img,
     w_url: 'https://sawsimonlinn.github.io/se_project_library/',
     w_github: 'https://github.com/SawSimonLinn/se_project_library',
@@ -56,7 +56,7 @@ const mywork_data = [
     w_no: 6,
     w_name: 'Triple Espresso',
     w_description:
-      'Coffee Shop is a static website using Semantic HTML5, Flexbox, Positioning, Flat BEM structure, a custom form, and CSS animations for an engaging experience.',
+      '    Coffee Shop is a static website built with Semantic HTML5, Flexbox, Positioning, Flat BEM, a custom form, and CSS animations for an engaging experience.',
     w_img: project6_img,
     w_url: 'https://sawsimonlinn.github.io/se_project_coffeeshop/',
     w_github: 'https://github.com/SawSimonLinn/se_project_coffeeshop',

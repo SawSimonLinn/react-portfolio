@@ -49,6 +49,7 @@ const Hero = () => {
       setIndex(prevIndex => prevIndex + 1);
     }
   };
+
   return (
     <div id='home' className='hero'>
       <motion.div
@@ -72,11 +73,15 @@ const Hero = () => {
       </p>
       <div className='hero-action'>
         <div className='hero-connect'>
-          <AnchorLink className='anchor-link' offset={50} href='#contact'>
-            Connect with me
-          </AnchorLink>
+          <a
+            className='anchor-link'
+            offset={50}
+            href='https://www.linkedin.com/in/sawsimonlinn/'
+            target='_blank'
+          >
+            <button>Connect with me</button>
+          </a>
         </div>
-        <div className='hero-resume'>My resume</div>
       </div>
     </div>
   );

@@ -26,6 +26,13 @@ const Contact = () => {
     }).then(res => res.json());
 
     alert(res.message);
+
+    // Reset form
+    setFormData({
+      name: '',
+      email: '',
+      message: '',
+    });
   };
 
   return (

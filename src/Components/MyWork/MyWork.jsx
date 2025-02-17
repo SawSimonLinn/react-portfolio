@@ -8,10 +8,10 @@ const MyWork = () => {
       <div className='title-box'>
         <h1>My latest work</h1>
       </div>
-      <div className='mywork-container'>
+      <article className='mywork-container'>
         {mywork_data.map((work, index) => {
           return (
-            <div className='work-card'>
+            <div className='work-card' key={index}>
               <img src={work.w_img} alt={work.w_name} />
               <div className='work-title'>
                 <h2>{work.w_name}</h2>
@@ -21,17 +21,17 @@ const MyWork = () => {
                 <p>{work.w_description}</p>
                 <div className='work-btn'>
                   <a href={work.w_url} target='_blank'>
-                    <button>Demo</button>
+                    <button className='work-btn-demo'>Demo</button>
                   </a>
                   <a href={work.w_github} target='_blank'>
-                    <button>GitHub</button>
+                    <button className='work-btn-github'>GitHub</button>
                   </a>
                 </div>
               </div>
             </div>
           );
         })}
-      </div>
+      </article>
     </div>
   );
 };

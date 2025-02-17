@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 60px;
-  margin: 0 10% 120px 10%;
+  margin: 40px 10% 120px 10%;
   /* background: #000; */
   background: linear-gradient(
     to top,
@@ -115,6 +115,8 @@
     gap: 50px;
     margin: 50px 6%;
     align-items: start;
+    background: none;
+    padding: 0;
   }
 
   .about-sections {
