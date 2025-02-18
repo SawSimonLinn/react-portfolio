@@ -1,0 +1,60 @@
+.tape {
+  white-space: nowrap;
+  position: relative;
+  margin: 0 -10px;
+}
+
+.tape-gradient {
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    #4776e6 0%,
+    #8e54e9 51%,
+    #4776e6 100%
+  );
+  padding: 15px 35px;
+  rotate: -4deg;
+  margin: 0;
+  width: auto;
+  background-size: 200% 100%;
+  animation: backgroundScroll 20s linear infinite;
+  margin: 50px auto;
+}
+
+.tape-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.tape-container {
+  display: flex;
+  /* flex: none; */
+  gap: 30px;
+}
+
+.tape-word {
+  font-weight: 500;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  text-transform: uppercase;
+  gap: 10px;
+}
+
+.tape-word img {
+  color: #fff;
+  max-width: 15%;
+  rotate: 50deg;
+}
+
+@keyframes backgroundScroll {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}

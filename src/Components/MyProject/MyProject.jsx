@@ -1,6 +1,7 @@
 import React from 'react';
 import './MyProject.css';
 import mywork_data from '../../assets/mywork_data';
+import { GoRocket } from 'react-icons/go';
 
 const MyProject = () => {
   const classNames = [
@@ -39,7 +40,9 @@ const MyProject = () => {
                         </button>
                       </a>
                       <a href={work.w_github} target='_blank'>
-                        <button className='work-btn-github'>GitHub</button>
+                        <button className='work-btn-github'>
+                          GitHub <GoRocket />
+                        </button>
                       </a>
                     </div>
                   </div>

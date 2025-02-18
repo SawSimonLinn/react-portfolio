@@ -5,6 +5,7 @@ import underline from '../../assets/nav_underline.svg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import menu_open from '../../assets/menu_open.svg';
 import menu_close from '../../assets/menu_close.svg';
+import resume from '../../assets/resume.pdf';
 import { motion } from 'motion/react';
 
 const Navbar = () => {
@@ -69,11 +70,10 @@ const Navbar = () => {
       <div className='nav-connect'>
         <a
           className='anchor-link'
-          offset={50}
-          href='https://www.linkedin.com/in/sawsimonlinn/'
-          target='_blank'
+          href={resume}
+          download='Simon_Linn_Resume.pdf'
         >
-          <button>Connect With Me</button>
+          <button>My resume</button>
         </a>
       </div>
     </div>

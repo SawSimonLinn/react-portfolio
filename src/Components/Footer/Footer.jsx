@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css';
 import footer_logo from '../../assets/logo.png';
 import user_icon from '../../assets/user_icon.svg';
+import { GoArrowUpRight } from 'react-icons/go';
 
 const Footer = () => {
   return (
@@ -29,13 +30,19 @@ const Footer = () => {
         </p>
         <div className='footer-bottom-right'>
           <a href='https://www.instagram.com/sawsimonlinn' target='_blank'>
-            <p>Instagram</p>
+            <p>
+              Instagram <GoArrowUpRight />
+            </p>
           </a>
           <a href='https://github.com/SawSimonLinn' target='_blank'>
-            <p>GitHub</p>
+            <p>
+              GitHub <GoArrowUpRight />
+            </p>
           </a>
           <a href='https://www.linkedin.com/in/sawsimonlinn/' target='_blank'>
-            <p>LinkedIn</p>
+            <p>
+              LinkedIn <GoArrowUpRight />
+            </p>
           </a>
         </div>
       </div>

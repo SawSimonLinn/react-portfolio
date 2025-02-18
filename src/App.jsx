@@ -7,6 +7,8 @@ import MyWork from './Components/MyWork/MyWork';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import MyProject from './Components/MyProject/MyProject';
+import Technologies from './Components/Technologies/Technologies';
+import TapeSection from './Components/Tape/Tape';
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
       <About />
       <MyProject />
       {/* <MyWork /> */}
+      <Technologies />
+      <TapeSection />
       <Contact />
       <Footer />
     </div>

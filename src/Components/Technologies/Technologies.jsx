@@ -1,0 +1,98 @@
+import React from 'react';
+import './Technologies.css';
+import { RiReactjsLine, RiNodejsLine } from 'react-icons/ri';
+import { SiExpress, SiMongodb, SiTailwindcss, SiWebpack } from 'react-icons/si';
+import { FaJsSquare, FaGithub } from 'react-icons/fa';
+
+import { motion } from 'framer-motion';
+
+const iconVariants = duration => ({
+  initial: { y: -10 },
+  animate: {
+    y: [10, -10],
+    transition: {
+      duration: duration,
+      ease: 'linear',
+      repeat: Infinity,
+      repeatType: 'reverse',
+    },
+  },
+});
+
+const Technologies = () => {
+  return (
+    <div className='container'>
+      <h1>Technologies</h1>
+      <div className=''>
+        <div className='tech-icons'>
+          <motion.div
+            variants={iconVariants(2.5)}
+            initial='initial'
+            animate='animate'
+            className='tech-icon'
+          >
+            <RiReactjsLine className='icon react' />
+          </motion.div>
+          <motion.div
+            variants={iconVariants(1)}
+            initial='initial'
+            animate='animate'
+            className='tech-icon'
+          >
+            <FaJsSquare className='icon javascript' />
+          </motion.div>
+          <motion.div
+            variants={iconVariants(3)}
+            initial='initial'
+            animate='animate'
+            className='tech-icon'
+          >
+            <FaGithub className='icon github' />
+          </motion.div>
+          <motion.div
+            variants={iconVariants(4)}
+            initial='initial'
+            animate='animate'
+            className='tech-icon'
+          >
+            <SiTailwindcss className='icon tailwind' />
+          </motion.div>
+          <motion.div
+            variants={iconVariants(2)}
+            initial='initial'
+            animate='animate'
+            className='tech-icon'
+          >
+            <SiWebpack className='icon webpack' />
+          </motion.div>
+          <motion.div
+            variants={iconVariants(4.5)}
+            initial='initial'
+            animate='animate'
+            className='tech-icon'
+          >
+            <RiNodejsLine className='icon nodejs' />
+          </motion.div>
+          <motion.div
+            variants={iconVariants(3.5)}
+            initial='initial'
+            animate='animate'
+            className='tech-icon'
+          >
+            <SiExpress className='icon express' />
+          </motion.div>
+          <motion.div
+            variants={iconVariants(2.5)}
+            initial='initial'
+            animate='animate'
+            className='tech-icon'
+          >
+            <SiMongodb className='icon mongodb' />
+          </motion.div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Technologies;

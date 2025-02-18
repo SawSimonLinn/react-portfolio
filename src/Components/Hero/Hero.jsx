@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Hero.css';
 import profile_img from '../../assets/profile_img.jpg';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { motion } from 'motion/react';
 
 const Hero = () => {
