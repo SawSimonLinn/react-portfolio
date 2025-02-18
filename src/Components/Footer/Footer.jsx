@@ -28,10 +28,10 @@ const Footer = () => {
           © 2025 Saw Simon Linn. All rights reserved.
         </p>
         <div className='footer-bottom-right'>
-          <a href='https://www.linkedin.com/in/sawsimonlinn/' target='_blank'>
+          <a href='https://www.instagram.com/sawsimonlinn' target='_blank'>
             <p>Instagram</p>
           </a>
-          <a href='https://www.linkedin.com/in/sawsimonlinn/' target='_blank'>
+          <a href='https://github.com/SawSimonLinn' target='_blank'>
             <p>GitHub</p>
           </a>
           <a href='https://www.linkedin.com/in/sawsimonlinn/' target='_blank'>
