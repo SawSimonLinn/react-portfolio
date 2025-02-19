@@ -6,7 +6,7 @@ import { motion } from 'motion/react';
 const About = () => {
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
+      initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1 }}
       id='about'
@@ -27,7 +27,7 @@ const About = () => {
               user-friendly websites that balance aesthetics and functionality
               while tackling coding challenges with enthusiasm.
             </p>
-            <p>
+            <p initial={{ width: '90%' }}>
               I'm passionate about exploring new technologies and continuously
               refining my skills. My goal is to create solutions that are both
               innovative and user-centered.
@@ -54,29 +54,44 @@ const About = () => {
         </div>
       </div>
       <div className='about-achievements'>
-        <div className='about-achievement'>
+        <motion.div
+          initial={{ opacity: 0, scale: 1.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          className='about-achievement'
+        >
           <h1>10+</h1>
           <p>COMPLETED PROJECTS</p>
           <p className='about_hover__text'>
             Real-world projects built during TripleTen Bootcamp.
           </p>
-        </div>
+        </motion.div>
         <hr />
-        <div className='about-achievement'>
+        <motion.div
+          initial={{ opacity: 0, scale: 1.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          className='about-achievement'
+        >
           <h1>10+</h1>
           <p>TECHNOLOGIES MASTERED</p>
           <p className='about_hover__text'>
             Including JavaScript, React.js, Node.js, and more.
           </p>
-        </div>
+        </motion.div>
         <hr />
-        <div className='about-achievement'>
+        <motion.div
+          initial={{ opacity: 0, scale: 1.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          className='about-achievement'
+        >
           <h1>500+</h1>
           <p>CODING HOURS LOGGED</p>
           <p className='about_hover__text'>
             Dedicated hours spent mastering front-end development.
           </p>
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );

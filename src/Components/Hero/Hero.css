@@ -187,6 +187,7 @@
 
   border-radius: 25px;
   padding: 150px 0;
+  margin: 0;
 
   @media screen and (max-width: 768px) {
     top: 25%;
@@ -196,8 +197,9 @@
   display: inline-block;
   font-size: 500px;
   font-weight: 800;
+
   color: #ffffff10;
-  animation: loopText 140s linear infinite;
+  animation: loopText 50s linear infinite;
 
   @media screen and (max-width: 768px) {
     font-size: 300px;

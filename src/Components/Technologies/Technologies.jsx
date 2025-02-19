@@ -21,7 +21,12 @@ const iconVariants = duration => ({
 
 const Technologies = () => {
   return (
-    <div className='container'>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1 }}
+      className='container'
+    >
       <h1>Technologies</h1>
       <div className=''>
         <div className='tech-icons'>
@@ -91,7 +96,7 @@ const Technologies = () => {
           </motion.div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

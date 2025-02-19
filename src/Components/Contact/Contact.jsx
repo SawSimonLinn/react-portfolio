@@ -3,6 +3,7 @@ import './Contact.css';
 import mail_icon from '../../assets/mail_icon.svg';
 import location_icon from '../../assets/location_icon.svg';
 import call_icon from '../../assets/call_icon.svg';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -49,7 +50,13 @@ const Contact = () => {
   };
 
   return (
-    <div id='contact' className='contact'>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1 }}
+      id='contact'
+      className='contact'
+    >
       <div className='title-box'>
         <h1>Get in touch</h1>
       </div>
@@ -103,7 +110,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
