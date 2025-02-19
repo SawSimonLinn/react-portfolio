@@ -110,10 +110,11 @@
     color: #d8d8d8;
   }
 }
-@media (max-width: 768px) {
+
+@media (max-width: 991px) {
   .about {
     gap: 50px;
-    margin: 50px 6%;
+    margin: 80px 6%;
     align-items: start;
     background: none;
     padding: 0;

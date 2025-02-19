@@ -5,6 +5,48 @@
   justify-content: center;
   flex-direction: column;
   gap: 30px;
+  position: relative;
+}
+
+.toHome {
+  z-index: 100;
+  opacity: 0;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+  color: #000;
+  animation: rotate360 5s linear infinite;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  transition: all 0.5s ease-in-out;
+
+  @media screen and (max-width: 768px) {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}
+.toHome.show {
+  opacity: 1;
+}
+.toHome:hover {
+  scale: 1.1;
+}
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .anchor-link button {
@@ -68,6 +110,7 @@
   align-items: center;
   gap: 25px;
   font-weight: 500;
+  position: relative;
   margin-bottom: 50px;
 }
 
@@ -103,8 +146,67 @@
   border-color: #8e54e9;
 }
 
+.hero-text-fly {
+  position: absolute;
+  top: 70px;
+  right: -100px;
+}
+.hero-linkedin {
+  position: relative;
+}
+.hero-linkedin-arrow {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  font-size: 15px;
+  color: #fff;
+  rotate: 220deg;
+}
+.hero-linkedin-text {
+  font-size: 14px;
+  font-weight: 500;
+  /* border: 2px solid #8e54e9; */
+  padding: 5px 10px;
+  border-radius: 20px;
+  width: 100%;
+  cursor: pointer;
+  color: #000;
+  background: rgb(255, 255, 255);
+}
+
+.hero-background-animation {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  z-index: -1;
+
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 25px;
+  padding: 150px 0;
+}
+.hero-background-animation h1 {
+  display: inline-block;
+  font-size: 500px;
+  font-weight: 800;
+  color: #ffffff10;
+  animation: loopText 70s linear infinite;
+}
+@keyframes loopText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
+    height: 80vh;
     gap: 20px;
     margin: 50px 6%;
   }

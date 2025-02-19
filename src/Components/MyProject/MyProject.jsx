@@ -2,6 +2,8 @@ import React from 'react';
 import './MyProject.css';
 import mywork_data from '../../assets/mywork_data';
 import { GoRocket } from 'react-icons/go';
+import { GoBrowser } from 'react-icons/go';
+import { motion } from 'motion/react';
 
 const MyProject = () => {
   const classNames = [
@@ -13,7 +15,7 @@ const MyProject = () => {
     'bg-white-box',
   ];
   return (
-    <div class='container'>
+    <div className='container'>
       <div className='title-box'>
         <h1>My latest work</h1>
       </div>
@@ -21,9 +23,14 @@ const MyProject = () => {
         {mywork_data.map((work, index) => {
           const cardClassName = classNames[index % classNames.length];
           return (
-            <div class='gradient-cards' key={index}>
-              <div class='card'>
-                <div class={`container-card ${cardClassName}`}>
+            <div className='gradient-cards' key={index}>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1 }}
+                className='card'
+              >
+                <div className={`container-card ${cardClassName}`}>
                   <img
                     className='card-image'
                     src={work.w_img}
@@ -31,12 +38,12 @@ const MyProject = () => {
                   />
                   <div className='text-box'>
                     {' '}
-                    <h2 class='card-title'>{work.w_name}</h2>
-                    <p class='card-description'>{work.w_description}</p>
+                    <h2 className='card-title'>{work.w_name}</h2>
+                    <p className='card-description'>{work.w_description}</p>
                     <div className='card-btn'>
                       <a href={work.w_url} target='_blank'>
                         <button className={`demo-btn ${cardClassName}`}>
-                          Demo
+                          Demo <GoBrowser />
                         </button>
                       </a>
                       <a href={work.w_github} target='_blank'>
@@ -47,7 +54,7 @@ const MyProject = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           );
         })}

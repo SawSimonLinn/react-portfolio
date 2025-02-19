@@ -1,10 +1,17 @@
 import React from 'react';
 import './About.css';
 import profile_img from '../../assets/author-image.jpg';
+import { motion } from 'motion/react';
 
 const About = () => {
   return (
-    <div id='about' className='about'>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1 }}
+      id='about'
+      className='about'
+    >
       <div className='title-box'>
         <h1>About me</h1>
       </div>
@@ -25,6 +32,7 @@ const About = () => {
               refining my skills. My goal is to create solutions that are both
               innovative and user-centered.
             </p>
+            }
           </div>
           <div className='about-skills'>
             <div className='about-skill'>
@@ -71,7 +79,7 @@ const About = () => {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

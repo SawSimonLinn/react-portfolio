@@ -29,7 +29,6 @@
 
 .tape-container {
   display: flex;
-  /* flex: none; */
   gap: 30px;
 }
 

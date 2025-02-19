@@ -27,8 +27,11 @@ body {
   gap: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  @media screen and (max-width: 991px) {
-    grid-template-columns: 1fr;
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -74,7 +77,8 @@ body {
   padding: 0 20px;
 }
 
-.work-btn-github {
+.work-btn-github,
+.demo-btn {
   display: flex;
   gap: 15px;
 }
@@ -93,7 +97,7 @@ body {
   button {
     background: transparent;
     color: #fff;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     border-radius: 35px;
     padding: 10px 30px;
     cursor: pointer;
@@ -103,6 +107,10 @@ body {
     background: #fff;
     color: #000;
   }
+}
+
+.card-btn a {
+  text-decoration: none;
 }
 
 .bg-green-box,

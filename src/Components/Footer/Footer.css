@@ -41,12 +41,14 @@
   font-size: 16px;
   padding: 18px 40px;
   border-radius: 50px;
+  border: none;
   background-image: linear-gradient(
     to right,
     #4776e6 0%,
     #8e54e9 51%,
     #4776e6 100%
   );
+  color: #fff;
   cursor: pointer;
   transition: 0.5s;
   background-size: 200% auto;
@@ -64,6 +66,7 @@
 
 .footer-bottom-right {
   display: flex;
+
   gap: 30px;
   margin-bottom: 10px;
 }
@@ -73,6 +76,9 @@
 .footer-bottom-right a {
   color: #fff;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .footer-bottom-right a:hover {
   color: #a0a0a0;
@@ -81,6 +87,10 @@
 }
 .footer-subscribe:hover {
   background-position: right center;
+}
+.arrow-up {
+  height: 20px;
+  width: 20px;
 }
 @media (max-width: 768px) {
   .footer {
