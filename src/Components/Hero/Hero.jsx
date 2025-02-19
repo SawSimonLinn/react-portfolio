@@ -122,7 +122,7 @@ const Hero = () => {
         </div>
       </div>
       <div className='hero-background-animation'>
-        <h1>SAW SIMON LINN </h1>
+        <h2 className='hero-background-animation-text'>SAW SIMON LINN </h2>
       </div>
     </div>
   );
