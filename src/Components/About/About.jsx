@@ -32,7 +32,6 @@ const About = () => {
               refining my skills. My goal is to create solutions that are both
               innovative and user-centered.
             </p>
-            }
           </div>
           <div className='about-skills'>
             <div className='about-skill'>

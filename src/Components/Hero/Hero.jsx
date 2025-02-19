@@ -72,57 +72,61 @@ const Hero = () => {
   }, []);
 
   return (
-    <div id='home' className='hero' ref={heroRef}>
-      <AnchorLink
-        className={`toHome ${showToHome ? 'show' : ''}`}
-        href='#home'
-        offset={100}
-      >
+    <div className='hero-hero'>
+      <div id='home' className='hero' ref={heroRef}>
+        <AnchorLink
+          className={`toHome ${showToHome ? 'show' : ''}`}
+          href='#home'
+          offset={100}
+        >
+          <p>
+            <GoArrowUp className='up-btn' />
+          </p>
+        </AnchorLink>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileHover={{ scale: 1.1 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <img
+            src={profile_img}
+            alt=''
+            className='profile-img profile-img_shadow'
+          />
+        </motion.div>
+        <h1>
+          <span>I'm Simon Linn, </span>
+          {text} <br></br>based in the California.
+        </h1>
         <p>
-          <GoArrowUp className='up-btn' />
+          A TripleTen graduate from California, USA, specializing in building
+          modern, user-friendly websites and creating responsive web designs.
         </p>
-      </AnchorLink>
-      <motion.div
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileHover={{ scale: 1.1 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
-      >
-        <img
-          src={profile_img}
-          alt=''
-          className='profile-img profile-img_shadow'
-        />
-      </motion.div>
-      <h1>
-        <span>I'm Simon Linn, </span>
-        {text} <br></br>based in the California.
-      </h1>
-      <p>
-        A TripleTen graduate from California, USA, specializing in building
-        modern, user-friendly websites and creating responsive web designs.
-      </p>
-      <div className=''></div>
-      <div className='hero-action'>
-        <div className='hero-connect'>
-          <a
-            className='anchor-link'
-            offset={50}
-            href='https://www.linkedin.com/in/sawsimonlinn/'
-            target='_blank'
-          >
-            <button>Connect with me</button>
-          </a>
-        </div>
-        <div className='hero-text-fly'>
-          <div className='hero-linkedin'>
-            <GoPaperAirplane className='hero-linkedin-arrow' />
-            <h6 className='hero-linkedin-text'>LinkedIn</h6>
+        <div className=''></div>
+        <div className='hero-action'>
+          <div className='hero-connect'>
+            <a
+              className='anchor-link'
+              offset={50}
+              href='https://www.linkedin.com/in/sawsimonlinn/'
+              target='_blank'
+            >
+              <button>Connect with me</button>
+            </a>
+          </div>
+          <div className='hero-text-fly'>
+            <div className='hero-linkedin'>
+              <GoPaperAirplane className='hero-linkedin-arrow' />
+              <h6 className='hero-linkedin-text'>LinkedIn</h6>
+            </div>
           </div>
         </div>
       </div>
       <div className='hero-background-animation'>
-        <h2 className='hero-background-animation-text'>SAW SIMON LINN </h2>
+        <h2 className='hero-background-animation-text'>
+          SAW SIMON LINN SAW SIMON LINN{' '}
+        </h2>
       </div>
     </div>
   );
