@@ -6,7 +6,7 @@ import { motion } from 'motion/react';
 const About = () => {
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.8 }}
+      initial={{ opacity: 0, scale: 0.6 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1 }}
       id='about'
@@ -55,7 +55,7 @@ const About = () => {
       </div>
       <div className='about-achievements'>
         <motion.div
-          initial={{ opacity: 0, scale: 1.5 }}
+          initial={{ opacity: 0, scale: 1.3 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
           className='about-achievement'
@@ -68,7 +68,7 @@ const About = () => {
         </motion.div>
         <hr />
         <motion.div
-          initial={{ opacity: 0, scale: 1.5 }}
+          initial={{ opacity: 0, scale: 1.3 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
           className='about-achievement'
@@ -81,7 +81,7 @@ const About = () => {
         </motion.div>
         <hr />
         <motion.div
-          initial={{ opacity: 0, scale: 1.5 }}
+          initial={{ opacity: 0, scale: 1.3 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
           className='about-achievement'

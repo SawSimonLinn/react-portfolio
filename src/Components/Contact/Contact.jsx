@@ -58,10 +58,15 @@ const Contact = () => {
       className='contact'
     >
       <div className='title-box'>
-        <h1>Get in touch</h1>
+        <h1 className='title-box-h1'> Get in touch</h1>
       </div>
       <div className='contact-section'>
-        <div className='contact-left'>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          className='contact-left'
+        >
           <h1>Let's talk</h1>
           <p>
             I'm currently available to take on new projects, so feel free to
@@ -79,8 +84,14 @@ const Contact = () => {
               <img src={location_icon} alt='' /> <p>Los Angeles, California.</p>
             </div>
           </div>
-        </div>
-        <form onSubmit={onSubmit} className='contact-right'>
+        </motion.div>
+        <motion.form
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          onSubmit={onSubmit}
+          className='contact-right'
+        >
           <label htmlFor='name'>Your Name</label>
           <input
             type='text'
@@ -108,7 +119,7 @@ const Contact = () => {
           <button type='submit' className='contact-submit'>
             Submit now
           </button>
-        </form>
+        </motion.form>
       </div>
     </motion.div>
   );
