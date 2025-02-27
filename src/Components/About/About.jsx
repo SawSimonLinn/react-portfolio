@@ -27,7 +27,7 @@ const About = () => {
               user-friendly websites that balance aesthetics and functionality
               while tackling coding challenges with enthusiasm.
             </p>
-            <p initial={{ width: '90%' }}>
+            <p>
               I'm passionate about exploring new technologies and continuously
               refining my skills. My goal is to create solutions that are both
               innovative and user-centered.

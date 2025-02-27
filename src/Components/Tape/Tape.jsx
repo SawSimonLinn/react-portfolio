@@ -38,6 +38,7 @@ const Tape = () => {
             <div key={index} className='tape-word'>
               <span>{word}</span>
               <img src={StarIcon} alt='Star' />
+              <p> . </p>
             </div>
           ))}
         </motion.div>
