@@ -19,10 +19,7 @@ const Footer = () => {
       <div className='footer-top'>
         <div className='footer-top-left'>
           <img className='footer_logo' src={footer_logo} alt='' />
-          <p>
-            A TripleTen graduate, I’m passionate about delivering user-friendly
-            web solutions. Let’s connect and discuss your project.
-          </p>
+          <p>Built with passion, persistence, and code.</p>
         </div>
         <div className='footer-top-right'>
           <div className='footer-email-input'>

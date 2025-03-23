@@ -18,19 +18,28 @@ const About = () => {
       <div className='about-sections'>
         <div className='about-left'>
           <img src={profile_img} alt='' />
+          <p>
+            {' '}
+            Outside of coding, I enjoy editing videos, designing visuals, and
+            spending time with my family.
+          </p>
         </div>
         <div className='about-right'>
           <div className='about-para'>
+            <h3>Who Am I?</h3>
             <p>
-              I'm Saw Simon Linn, a TripleTen graduate and dedicated Full-Stack
-              Developer. I specialize in designing and developing responsive,
-              user-friendly websites that balance aesthetics and functionality
-              while tackling coding challenges with enthusiasm.
+              I’m Simon, a passionate frontend developer with a background in
+              graphic design and video editing.
+              <br /> I started designing at 13 and spent over 6 years working
+              professionally as a designer in Myanmar. Later, I transitioned
+              into software engineering to pursue my lifelong dream of creating
+              tools that help people.
             </p>
             <p>
-              I'm passionate about exploring new technologies and continuously
-              refining my skills. My goal is to create solutions that are both
-              innovative and user-centered.
+              I recently graduated from a software engineering program where I
+              learned HTML, CSS, JavaScript, React, Node.js, MongoDB, and more.
+              I’m now focused on building real-world applications and becoming
+              the best developer I can be.
             </p>
           </div>
           <div className='about-skills'>

@@ -9,10 +9,12 @@ import Footer from './Components/Footer/Footer';
 import MyProject from './Components/MyProject/MyProject';
 import Technologies from './Components/Technologies/Technologies';
 import TapeSection from './Components/Tape/Tape';
+import Preloader from './Components/Preloader/Preloader';
 
 const App = () => {
   return (
     <div>
+      <Preloader />
       <Navbar />
       <Hero />
       <About />

@@ -96,7 +96,8 @@ const Hero = () => {
           />
         </motion.div>
         <h1>
-          <span>I'm Simon Linn, </span>
+          <span>I'm Saw Simon Linn, </span>
+          <br />
           {text} <br></br>based in the California.
         </h1>
         <p>
@@ -106,21 +107,16 @@ const Hero = () => {
         <div className=''></div>
         <div className='hero-action'>
           <div className='hero-connect'>
-            <a
-              className='anchor-link'
-              offset={50}
-              href='https://www.linkedin.com/in/sawsimonlinn/'
-              target='_blank'
-            >
-              <button>Connect with me</button>
+            <a className='anchor-link' offset={50} href='#projects'>
+              <button>View My Work</button>
             </a>
           </div>
-          <div className='hero-text-fly'>
+          {/* <div className='hero-text-fly'>
             <div className='hero-linkedin'>
               <GoPaperAirplane className='hero-linkedin-arrow' />
               <h6 className='hero-linkedin-text'>LinkedIn</h6>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className='hero-background-animation'>

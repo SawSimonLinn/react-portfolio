@@ -15,7 +15,7 @@ const MyProject = () => {
     'bg-white-box',
   ];
   return (
-    <div className='container'>
+    <div className='container' id='projects'>
       <div className='title-box'>
         <h1>My latest work</h1>
       </div>
@@ -38,8 +38,10 @@ const MyProject = () => {
                     alt={work.w_name}
                   />
                   <div className='text-box'>
-                    {' '}
                     <h2 className='card-title'>{work.w_name}</h2>
+                    <div className='language'>
+                      <p>{work.w_language}</p>
+                    </div>
                     <p className='card-description'>{work.w_description}</p>
                     <div className='card-btn'>
                       <a href={work.w_url} target='_blank'>

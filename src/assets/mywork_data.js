@@ -7,6 +7,7 @@ import project6_img from '../assets/project_6.png';
 
 const mywork_data = [
   {
+    w_language: 'React.js, JavaScript, CSS',
     w_no: 1,
     w_name: 'News Explorer',
     w_description:
@@ -16,6 +17,7 @@ const mywork_data = [
     w_github: 'https://github.com/SawSimonLinn/se_project_newsexplorer',
   },
   {
+    w_language: 'React.js, JavaScript, CSS',
     w_no: 2,
     w_name: 'What to Wear (WTWR)',
     w_description:
@@ -25,6 +27,7 @@ const mywork_data = [
     w_github: 'https://github.com/SawSimonLinn/se_project_react',
   },
   {
+    w_language: 'Node.js, Express.js, MongoDB',
     w_no: 3,
     w_name: 'WTWR Backend',
     w_img: project3_img,
@@ -35,8 +38,9 @@ const mywork_data = [
   },
 
   {
+    w_language: 'Javascript, OOP, Webpack, API',
     w_no: 4,
-    w_name: 'Around the US',
+    w_name: 'Around the U.S.',
     w_description:
       'Around The U.S. is a JavaScript (OOP) web app with interactive features, dynamic content updates, and a modular, maintainable code structure.',
     w_img: project4_img,
@@ -44,22 +48,24 @@ const mywork_data = [
     w_github: 'https://github.com/SawSimonLinn/se_project_aroundtheus',
   },
   {
+    w_language: 'JavaScript, Node.js, Express.js, MongoDB',
     w_no: 5,
-    w_name: 'Triple Peaks Library',
+    w_name: 'Eco Challenge Web App',
     w_description:
-      '    Library Project is a static website using Semantic HTML5, Flexbox, and Positioning, with z-index for effective element layering.',
+      'Eco Challenge is a web application designed to help users achieve their environmental goals by completing daily challenges.',
     w_img: project5_img,
-    w_url: 'https://sawsimonlinn.github.io/se_project_library/',
-    w_github: 'https://github.com/SawSimonLinn/se_project_library',
+    w_url: 'https://ecochallengeapp.com/',
+    w_github: 'https://github.com/SawSimonLinn/eco-challenge',
   },
   {
+    w_language: 'HTML, CSS, Javascript, API ',
     w_no: 6,
-    w_name: 'Triple Espresso',
+    w_name: 'Fake Data Generator',
     w_description:
-      '    Coffee Shop is a static website built with Semantic HTML5, Flexbox, Positioning, Flat BEM, a custom form, and CSS animations for an engaging experience.',
+      '    A modern Fake Data Generator that allows users to generate random fake data in multiple formats (JSON, HTML, JavaScript, TypeScript, Python, CSV, SQL).',
     w_img: project6_img,
-    w_url: 'https://sawsimonlinn.github.io/se_project_coffeeshop/',
-    w_github: 'https://github.com/SawSimonLinn/se_project_coffeeshop',
+    w_url: 'https://sawsimonlinn.github.io/fake_data_generator/',
+    w_github: 'https://github.com/SawSimonLinn/fake_data_generator',
   },
 ];
 

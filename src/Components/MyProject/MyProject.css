@@ -68,6 +68,12 @@ body {
   }
 }
 
+.language {
+  font-size: 14px;
+  opacity: 0.8;
+  letter-spacing: 1px;
+}
+
 .card-image {
   width: 100%;
   height: auto;

@@ -1,11 +1,9 @@
 import React, { useRef, useState } from 'react';
 import './Navbar.css';
-import logo from '../../assets/logo.png';
 import underline from '../../assets/nav_underline.svg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import menu_open from '../../assets/menu_open.svg';
 import menu_close from '../../assets/menu_close.svg';
-import resume from '../../assets/resume.pdf';
 import { motion } from 'motion/react';
 
 const Navbar = () => {
@@ -22,11 +20,16 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <motion.div
+        className='nav-logo'
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
       >
-        <img src={logo} alt='' className='logo' />
+        <h1>Simon Linn</h1>
+        <div className='hire__div'>
+          <div className='hire__green'></div>
+          <p className='hire-text'>Avaiable For Hire</p>
+        </div>
       </motion.div>
       <img src={menu_open} onClick={openMenu} alt='' className='nav-mob-open' />
       <ul ref={menuRef} className='nav-menu'>
@@ -48,12 +51,7 @@ const Navbar = () => {
           </AnchorLink>
           {menu === 'about' ? <img src={underline} alt='' /> : <></>}
         </li>
-        {/* <li>
-          <AnchorLink className='anchor-link' offset={50} href='#services'>
-            <p onClick={() => setMenu('services')}>Services</p>
-          </AnchorLink>
-          {menu === 'services' ? <img src={underline} alt='' /> : <></>}
-        </li> */}
+
         <li>
           <AnchorLink className='anchor-link' offset={50} href='#work'>
             <p onClick={() => setMenu('work')}>Portfolio</p>
@@ -70,10 +68,11 @@ const Navbar = () => {
       <div className='nav-connect'>
         <a
           className='anchor-link'
-          href={resume}
-          download='Simon_Linn_Resume.pdf'
+          offset={50}
+          href='https://www.linkedin.com/in/sawsimonlinn/'
+          target='_blank'
         >
-          <button>My resume</button>
+          <button>Connect With Me</button>
         </a>
       </div>
     </div>
