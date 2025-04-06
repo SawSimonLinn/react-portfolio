@@ -44,19 +44,19 @@ const About = () => {
           </div>
           <div className='about-skills'>
             <div className='about-skill'>
-              <p>HTML & CSS</p>
+              <p>TypeScript</p>
               <hr style={{ width: '50%' }} />
-            </div>
-            <div className='about-skill'>
-              <p>React JS</p>
-              <hr style={{ width: '70%' }} />
             </div>
             <div className='about-skill'>
               <p>JavaScript</p>
               <hr style={{ width: '60%' }} />
             </div>
             <div className='about-skill'>
-              <p>Node JS</p>
+              <p>React.js</p>
+              <hr style={{ width: '70%' }} />
+            </div>
+            <div className='about-skill'>
+              <p>Next.js</p>
               <hr style={{ width: '50%' }} />
             </div>
           </div>
@@ -69,7 +69,7 @@ const About = () => {
           transition={{ duration: 1 }}
           className='about-achievement'
         >
-          <h1>10+</h1>
+          <h1>20+</h1>
           <p>COMPLETED PROJECTS</p>
           <p className='about_hover__text'>
             Real-world projects built during TripleTen Bootcamp.
@@ -95,7 +95,7 @@ const About = () => {
           transition={{ duration: 1 }}
           className='about-achievement'
         >
-          <h1>500+</h1>
+          <h1>900+</h1>
           <p>CODING HOURS LOGGED</p>
           <p className='about_hover__text'>
             Dedicated hours spent mastering front-end development.
