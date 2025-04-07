@@ -14,6 +14,15 @@ const MyProject = () => {
     'bg-green-box',
     'bg-white-box',
   ];
+
+  const textClassNames = [
+    'text-green',
+    'text-white',
+    'text-yellow',
+    'text-blue',
+    'text-green',
+    'text-white',
+  ];
   return (
     <div className='container' id='projects'>
       <div className='title-box'>
@@ -22,6 +31,7 @@ const MyProject = () => {
       <div className='all-card'>
         {mywork_data.map((work, index) => {
           const cardClassName = classNames[index % classNames.length];
+          const textClassName = textClassNames[index % textClassNames.length];
           return (
             <div className='gradient-cards' key={index}>
               <motion.div
@@ -40,16 +50,28 @@ const MyProject = () => {
                   <div className='text-box'>
                     <h2 className='card-title'>{work.w_name}</h2>
                     <div className='language'>
-                      <p>{work.w_language}</p>
+                      <p className={`language-p ${textClassName}`}>
+                        {work.w_language}
+                      </p>
                     </div>
                     <p className='card-description'>{work.w_description}</p>
                     <div className='card-btn'>
-                      <a href={work.w_url} target='_blank'>
-                        <button className={`demo-btn ${cardClassName}`}>
+                      <a
+                        className='btn-link'
+                        href={work.w_url}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        <button className={`demo-btn ${textClassName}`}>
                           Demo <GoBrowser />
                         </button>
                       </a>
-                      <a href={work.w_github} target='_blank'>
+                      <a
+                        className='btn-link'
+                        href={work.w_github}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
                         <button className='work-btn-github'>
                           GitHub <GoRocket />
                         </button>

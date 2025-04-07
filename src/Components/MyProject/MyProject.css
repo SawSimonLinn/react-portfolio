@@ -60,39 +60,32 @@ body {
   border: 2px solid transparent;
   background: linear-gradient(71deg, #080509, #1a171c, #080509);
   background-clip: padding-box;
-  border-radius: 45px;
-  padding: 10px 10px 40px 10px;
+  /* border-radius: 45px; */
+  padding: 5px;
   img {
-    margin-bottom: 32px;
-    border-radius: 35px 35px 0 0;
+    /* border-radius: 35px 35px 0 0; */
   }
-}
-
-.language {
-  font-size: 14px;
-  opacity: 0.8;
-  letter-spacing: 1px;
 }
 
 .card-image {
   width: 100%;
+  margin: 0 0 15px 0;
   height: auto;
 }
 
 .text-box {
-  padding: 0 20px;
+  padding: 0 20px 20px;
 }
 
-.work-btn-github,
-.demo-btn {
-  display: flex;
-  gap: 15px;
+.btn-link {
+  width: 100%;
 }
 
 .card-btn {
   margin-top: 20px;
   display: flex;
-  gap: 10px;
+  justify-content: space-between;
+  gap: 20px;
   @media screen and (max-width: 991px) {
     margin-top: 10px;
   }
@@ -101,16 +94,23 @@ body {
   }
 
   button {
-    background: transparent;
+    display: flex;
+    gap: 15px;
+    font-size: 15px;
+    width: 100%;
     color: #fff;
     border: 1px solid #fff;
-    padding: 10px 30px;
+    padding: 10px 40px;
     cursor: pointer;
     transition: all 0.3s ease;
   }
+  .work-btn-github {
+    background: transparent;
+  }
   button:hover {
-    background: #fff;
-    color: #000;
+    /* scale: 1.05; */
+    border: 1px solid transparent;
+    box-shadow: -5px 0 0 #fff;
   }
 }
 
@@ -136,7 +136,33 @@ body {
   right: -1px;
   content: '';
   z-index: -1;
-  border-radius: 45px;
+  /* border-radius: 45px; */
+}
+
+.language {
+  font-size: 14px;
+  opacity: 0.8;
+  letter-spacing: 1px;
+}
+
+.language-p {
+  padding: 5px 0 5px 10px;
+}
+
+.text-green {
+  background: linear-gradient(71deg, #3da077, #0d1212);
+}
+
+.text-white {
+  background: linear-gradient(71deg, #b0afb0, #121013);
+}
+
+.text-yellow {
+  background: linear-gradient(71deg, #afa220, #110e0e);
+}
+
+.text-blue {
+  background: linear-gradient(71deg, #5f6fad, #0c0a0e);
 }
 
 .bg-green-box::after {
@@ -169,7 +195,7 @@ body {
 }
 
 .card-description {
-  margin: 10px 0 0 0;
+  margin: 20px 0 0 0;
   height: 96px;
   line-height: 24px;
   overflow: hidden;

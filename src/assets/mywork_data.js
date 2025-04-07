@@ -7,7 +7,7 @@ import project6_img from '../assets/project_6.png';
 
 const mywork_data = [
   {
-    w_language: 'React.js, JavaScript, CSS',
+    w_language: 'React.js, JavaScript, API, HTML, CSS',
     w_no: 1,
     w_name: 'News Explorer',
     w_description:
@@ -17,9 +17,9 @@ const mywork_data = [
     w_github: 'https://github.com/SawSimonLinn/se_project_newsexplorer',
   },
   {
-    w_language: 'React.js, JavaScript, CSS',
+    w_language: 'React.js, JavaScript, API, HTML, CSS',
     w_no: 2,
-    w_name: 'What to Wear (WTWR)',
+    w_name: 'What to Wear',
     w_description:
       'A React.js frontend project with a dynamic UI, component-based architecture, state management, and API integration.',
     w_img: project2_img,
@@ -27,18 +27,18 @@ const mywork_data = [
     w_github: 'https://github.com/SawSimonLinn/se_project_react',
   },
   {
-    w_language: 'Node.js, Express.js, MongoDB',
-    w_no: 3,
-    w_name: 'WTWR Backend',
-    w_img: project3_img,
+    w_language: 'Next.js, TypeScript, Tailwind, Sanity',
+    w_no: 2,
+    w_name: 'YC Directory',
     w_description:
-      'An Express.js backend project with RESTful APIs, server-side functionality, authentication, modular routing, and scalability.',
-    w_url: 'https://www.wtwrapp.jumpingcrab.com/',
-    w_github: 'https://github.com/SawSimonLinn/se_project_express',
+      'A React.js frontend project with a dynamic UI, component-based architecture, state management, and API integration.',
+    w_img: project3_img,
+    w_url: 'https://yc-directory-ten-nu.vercel.app/',
+    w_github: 'https://github.com/SawSimonLinn/yc_directory',
   },
 
   {
-    w_language: 'Javascript, OOP, Webpack, API',
+    w_language: 'Javascript, OOP, Webpack, API, HTML, CSS',
     w_no: 4,
     w_name: 'Around the U.S.',
     w_description:
@@ -58,7 +58,7 @@ const mywork_data = [
     w_github: 'https://github.com/SawSimonLinn/eco-challenge',
   },
   {
-    w_language: 'HTML, CSS, Javascript, API ',
+    w_language: 'HTML, CSS, Javascript, API, JSON, data  ',
     w_no: 6,
     w_name: 'Fake Data Generator',
     w_description:

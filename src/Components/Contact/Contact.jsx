@@ -74,13 +74,25 @@ const Contact = () => {
           </p>
           <div className='contact-details'>
             <div className='contact-detail'>
-              <img src={mail_icon} alt='' /> <p>simon@sawsimonlinn.com</p>
+              <img src={mail_icon} alt='mailicon' />{' '}
+              <p>simon@sawsimonlinn.com</p>
+            </div>
+            {/* <div href='#' className='contact-details'>
+              <img src={call_icon} alt='linkedin' /> <p>LinkedIn</p>
+            </div> */}
+            <div className='contact-detail'>
+              <img src={call_icon} alt='' />{' '}
+              <a
+                target='_blank'
+                href='https://www.linkedin.com/in/sawsimonlinn/'
+                rel='noopener noreferrer'
+              >
+                <p>LinkedIn</p>
+              </a>
             </div>
             <div className='contact-detail'>
-              <img src={call_icon} alt='' /> <p>+1 (414) 343-6893</p>
-            </div>
-            <div className='contact-detail'>
-              <img src={location_icon} alt='' /> <p>Los Angeles, California.</p>
+              <img src={location_icon} alt='locationicon' />{' '}
+              <p>Los Angeles, California.</p>
             </div>
           </div>
         </motion.div>
