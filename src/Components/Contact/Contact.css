@@ -58,6 +58,13 @@
 .contact-detail img {
   width: 25px;
 }
+.contact-detail a {
+  text-decoration: none;
+}
+.contact-detail a:hover {
+  text-decoration: underline;
+  color: #8e54e9;
+}
 .contact-right {
   flex-basis: 55%;
   display: flex;

@@ -11,12 +11,12 @@
   gap: 40px;
   font-size: 16px;
 }
+
 .nav-connect {
-  padding: 15px 20px;
-  border-radius: 50px;
-
+  position: relative;
+  padding: 22px 2px;
+  border-radius: 12px;
   font-size: 16px;
-
   background-image: linear-gradient(
     to right,
     #8e54e9 0%,
@@ -26,6 +26,11 @@
   cursor: pointer;
   transition: 0.5s;
   background-size: 200% auto;
+}
+.nav-connect > * {
+  border-radius: 12px;
+  background-color: #1c1c1c;
+  padding: 20px 50px;
 }
 
 .nav-logo {
@@ -93,6 +98,20 @@
   .nav-connect {
     display: none;
   }
+  .nav-logo h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+
+  .hire__div {
+    gap: 10px;
+  }
+
+  .hire-text {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
   .nav-mob-open {
     display: block;
     position: absolute;

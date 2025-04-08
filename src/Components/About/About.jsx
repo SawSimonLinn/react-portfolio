@@ -1,7 +1,7 @@
-import React from 'react';
-import './About.css';
-import profile_img from '../../assets/author-image.jpg';
-import { motion } from 'motion/react';
+import React from "react";
+import "./About.css";
+import profile_img from "../../assets/author-image.jpg";
+import { motion } from "motion/react";
 
 const About = () => {
   return (
@@ -9,23 +9,23 @@ const About = () => {
       initial={{ opacity: 0, scale: 0.6 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1 }}
-      id='about'
-      className='about'
+      id="about"
+      className="about"
     >
-      <div className='title-box'>
+      <div className="title-box">
         <h1>About me</h1>
       </div>
-      <div className='about-sections'>
-        <div className='about-left'>
-          <img src={profile_img} alt='' />
+      <div className="about-sections">
+        <div className="about-left">
+          <img src={profile_img} alt="" />
           <p>
-            {' '}
+            {" "}
             Outside of coding, I enjoy editing videos, designing visuals, and
             spending time with my family.
           </p>
         </div>
-        <div className='about-right'>
-          <div className='about-para'>
+        <div className="about-right">
+          <div className="about-para">
             <h3>Who Am I?</h3>
             <p>
               I’m Simon, a passionate frontend developer with a background in
@@ -42,65 +42,50 @@ const About = () => {
               the best developer I can be.
             </p>
           </div>
-          <div className='about-skills'>
-            <div className='about-skill'>
+          <div className="about-skills">
+            <div className="about-skill">
               <p>TypeScript</p>
-              <hr style={{ width: '50%' }} />
+              <hr style={{ width: "50%" }} />
             </div>
-            <div className='about-skill'>
+            <div className="about-skill">
               <p>JavaScript</p>
-              <hr style={{ width: '60%' }} />
+              <hr style={{ width: "60%" }} />
             </div>
-            <div className='about-skill'>
+            <div className="about-skill">
               <p>React.js</p>
-              <hr style={{ width: '70%' }} />
+              <hr style={{ width: "70%" }} />
             </div>
-            <div className='about-skill'>
+            <div className="about-skill">
               <p>Next.js</p>
-              <hr style={{ width: '50%' }} />
+              <hr style={{ width: "50%" }} />
             </div>
           </div>
         </div>
       </div>
-      <div className='about-achievements'>
-        <motion.div
-          initial={{ opacity: 0, scale: 1.3 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
-          className='about-achievement'
-        >
+      <div className="about-achievements">
+        <div className="about-achievement">
           <h1>20+</h1>
           <p>COMPLETED PROJECTS</p>
-          <p className='about_hover__text'>
+          <p className="about_hover__text">
             Real-world projects built during TripleTen Bootcamp.
           </p>
-        </motion.div>
+        </div>
         <hr />
-        <motion.div
-          initial={{ opacity: 0, scale: 1.3 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
-          className='about-achievement'
-        >
+        <div className="about-achievement">
           <h1>10+</h1>
           <p>TECHNOLOGIES MASTERED</p>
-          <p className='about_hover__text'>
+          <p className="about_hover__text">
             Including JavaScript, React.js, Node.js, and more.
           </p>
-        </motion.div>
+        </div>
         <hr />
-        <motion.div
-          initial={{ opacity: 0, scale: 1.3 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
-          className='about-achievement'
-        >
+        <div className="about-achievement">
           <h1>900+</h1>
           <p>CODING HOURS LOGGED</p>
-          <p className='about_hover__text'>
+          <p className="about_hover__text">
             Dedicated hours spent mastering front-end development.
           </p>
-        </motion.div>
+        </div>
       </div>
     </motion.div>
   );
