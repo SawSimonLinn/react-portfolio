@@ -94,6 +94,7 @@ const Hero = () => {
             className="profile-img profile-img_shadow"
           />
         </motion.div>
+
         <h1>
           <span>I'm Saw Simon Linn, </span>
           <br />

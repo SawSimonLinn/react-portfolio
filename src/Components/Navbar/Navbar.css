@@ -11,10 +11,18 @@
   gap: 40px;
   font-size: 16px;
 }
+.nav-logo h1 {
+  display: flex;
+  align-items: center;
+  font-size: 32.5px;
+  height: 30px;
+  font-weight: bold;
+  letter-spacing: 0;
+}
 
 .nav-connect {
   position: relative;
-  padding: 22px 2px;
+  padding: 19px 1.5px;
   border-radius: 12px;
   font-size: 16px;
   background-image: linear-gradient(

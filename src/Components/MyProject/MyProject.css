@@ -232,8 +232,8 @@ body {
   background-size: 200% auto;
 }
 .work-connect > * {
-  border-radius: 12px; /* slightly smaller to match inside curve */
-  background-color: #1c1c1c; /* inner card background */
+  border-radius: 12px;
+  background-color: #1c1c1c;
   padding: 20px 80px;
 }
 

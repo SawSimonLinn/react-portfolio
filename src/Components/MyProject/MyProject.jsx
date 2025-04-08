@@ -119,7 +119,7 @@ const MyProject = () => {
           target="_blank"
         >
           <button>
-            Explore more <FaLocationArrow />
+            <p> Explore more</p> <FaLocationArrow />
           </button>
         </a>
       </div>
